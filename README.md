@@ -44,7 +44,7 @@ It is especially useful when:
 Install this skill with:
 
 ```bash
-npx skills add https://github.com/jchuan333/webpage-interpreter-skill --skill webpage-interpreter
+npx skills add https://github.com/crank-dc/webpage-interpreter-skill --skill webpage-interpreter
 ```
 
 ## 使用示例 | Usage
