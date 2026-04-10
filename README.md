@@ -39,13 +39,78 @@ It is especially useful when:
 
 ## 安装 | Install
 
-你可以通过下面的命令安装这个 skill：
+这个 skill 使用 `skills` CLI 方式安装。  
+This skill is installed via the `skills` CLI workflow.
 
-Install this skill with:
+### 通用安装命令 | Universal Install Command
+
+你可以先使用这条通用命令安装：
+
+Use this universal install command first:
 
 ```bash
 npx skills add https://github.com/crank-dc/webpage-interpreter-skill --skill webpage-interpreter
 ```
+
+### 在 Codex 中安装 | Install for Codex
+
+如果你使用的是 Codex，可以直接运行上面的命令。
+
+If you are using Codex, run the command above directly.
+
+安装完成后，可以检查这个目录是否存在：
+
+After installation, you can check whether this directory exists:
+
+```bash
+~/.codex/skills/webpage-interpreter
+```
+
+然后你可以这样测试：
+
+Then test it like this:
+
+```text
+Use $webpage-interpreter to explain this webpage in Chinese.
+```
+
+### 在 Claude Code 中安装 | Install for Claude Code
+
+如果你使用的是 Claude Code，也可以使用同一条安装命令：
+
+If you are using Claude Code, you can use the same install command:
+
+```bash
+npx skills add https://github.com/crank-dc/webpage-interpreter-skill --skill webpage-interpreter
+```
+
+安装完成后，通常可以检查这个目录：
+
+After installation, you can usually check this directory:
+
+```bash
+~/.claude/skills/webpage-interpreter
+```
+
+然后在 Claude Code 里这样调用：
+
+Then invoke it in Claude Code like this:
+
+```text
+Use $webpage-interpreter to explain this webpage in Chinese.
+```
+
+### 安装后如何确认 | How to Verify Installation
+
+安装后，你可以通过下面两种方式确认是否成功：
+
+After installation, you can verify success in two simple ways:
+
+- 检查本地 skill 目录里是否出现 `webpage-interpreter`
+- 在你的 agent 工具里直接调用 `$webpage-interpreter`
+
+- check whether the local skill directory contains `webpage-interpreter`
+- invoke `$webpage-interpreter` directly in your agent tool
 
 ## 使用示例 | Usage
 
