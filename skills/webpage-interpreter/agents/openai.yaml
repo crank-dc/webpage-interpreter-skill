@@ -1,0 +1,7 @@
+interface:
+  display_name: "网页解读器"
+  short_description: "用中文快速解释英文网页、安装教程和设计长文重点内容"
+  default_prompt: "Use $webpage-interpreter to read this webpage and explain in Chinese what it is mainly about, what matters most, and whether I should keep reading."
+
+policy:
+  allow_implicit_invocation: true
